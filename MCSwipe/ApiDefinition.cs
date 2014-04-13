@@ -86,10 +86,10 @@ namespace MCSwipe {
 		bool ShouldAnimateIcons { get; set; }
 
 		[Export ("setSwipeGestureWithView:color:mode:state:completionBlock:")]
-		void SetSwipeGestureWithView (UIView view, UIColor color, MCSwipeTableViewCellMode mode, MCSwipeTableViewCellState state, NSAction completionBlock);
+		void SetSwipeGestureWithView (UIView view, UIColor color, MCCellMode mode, MCCellState state, NSAction completionBlock);
 
 		[Export ("swipeToOriginWithCompletion:")]
-		void SwipeToOriginWithCompletion (MCSwipeCompletionBlock completion);
+		void SwipeToOriginWithCompletion (NSAction completion);
 	}
 
 	[Model, BaseType (typeof (NSObject))]
