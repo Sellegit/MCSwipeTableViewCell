@@ -51,5 +51,6 @@
     <Compile Include="libMCSwipeTableViewCell.linkwith.cs">
       <DependentUpon>libMCSwipeTableViewCell.a</DependentUpon>
     </Compile>
+    <Compile Include="Extra.cs" />
   </ItemGroup>
 </Project>
