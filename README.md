@@ -42,9 +42,7 @@ Usage
 		cell.SetSwipeGestureWithView (Images [1], Colors [1], MCCellMode.Switch, MCCellState.Two, delegate {
 			Console.WriteLine("Second State");
 		});
-				
-
-				
+								
 		return cell;
 	}
 	
