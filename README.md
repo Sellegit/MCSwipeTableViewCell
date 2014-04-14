@@ -49,7 +49,8 @@ Usage
 
 Bugs/Limitations
 ====================
--When setting 4 States, only 3 seem functional
+-When setting 4 States, only 3 seem functional<br />
+-Deletion issues<br />
 -No DetailTextLabel, only TextLabel at the moment.
 
 
