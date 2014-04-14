@@ -49,9 +49,10 @@ Usage
 	}
 	
 
-Bugs
+Bugs/Limitations
 ====================
 -When setting 4 States, only 3 seem functional
+-No DetailTextLabel, only TextLabel at the moment.
 
 
 Credits
