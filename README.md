@@ -1,8 +1,8 @@
 MCSwipeTableViewCell
 ====================
 
-Xamarin.iOS Binding of MCSwipeTableViewCell (Swappable UITableViewCell subclass that triggers on swipes, just like the infamous Mailbox app)
-
+A Work-In-Progress Xamarin.iOS Binding of MCSwipeTableViewCell (Swappable UITableViewCell subclass that triggers on swipes, just like the infamous Mailbox app).
+<img src="https://raw.github.com/alikaragoz/MCSwipeTableViewCell/master/github-assets/mcswipe-front.png" />
 
 Usage
 ====================
@@ -27,19 +27,19 @@ Usage
 			UIColor.FromRGB (254, 217, 56),
 			UIColor.FromRGB (206, 149, 98) };
 				
-		cell.SetSwipeGestureWithView (Images [3], Colors [3], MCSwipeTableViewCellMode.Switch, MCSwipeTableViewCellState.Four, delegate {
+		cell.SetSwipeGestureWithView (Images [3], Colors [3], MCCellMode.Switch, MCCellState.Four, delegate {
 			Console.WriteLine ("Fourth State");
 		});
 
-		cell.SetSwipeGestureWithView (Images [2], Colors [2], MCSwipeTableViewCellMode.Switch, MCSwipeTableViewCellState.Three, delegate {
+		cell.SetSwipeGestureWithView (Images [2], Colors [2], MCCellMode.Switch, MCCellState.Three, delegate {
 			Console.WriteLine("Third State");
 		});
 
-		cell.SetSwipeGestureWithView (Images [0], Colors [0], MCSwipeTableViewCellMode.Switch, MCSwipeTableViewCellState.One,delegate {
+		cell.SetSwipeGestureWithView (Images [0], Colors [0], MCCellMode.Switch, MCCellState.One,delegate {
 			Console.WriteLine("First State");
 		});
 
-		cell.SetSwipeGestureWithView (Images [1], Colors [1], MCSwipeTableViewCellMode.Switch, MCSwipeTableViewCellState.Two, delegate {
+		cell.SetSwipeGestureWithView (Images [1], Colors [1], MCCellMode.Switch, MCCellState.Two, delegate {
 			Console.WriteLine("Second State");
 		});
 				
@@ -47,3 +47,13 @@ Usage
 				
 		return cell;
 	}
+	
+
+Bugs
+====================
+-When setting 4 States, only 3 seem functional
+
+
+Credits
+====================
+-alikaragoz for original MCSwipeTableViewCell

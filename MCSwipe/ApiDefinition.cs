@@ -47,16 +47,16 @@ namespace MCSwipe {
 		UIView View4 { get; set; }
 
 		[Export ("completionBlock1", ArgumentSemantic.Copy)]
-		MCSwipeCompletionBlock CompletionBlock1 { get; set; }
+		NSAction CompletionBlock1 { get; set; }
 
 		[Export ("completionBlock2", ArgumentSemantic.Copy)]
-		MCSwipeCompletionBlock CompletionBlock2 { get; set; }
+		NSAction CompletionBlock2 { get; set; }
 
 		[Export ("completionBlock3", ArgumentSemantic.Copy)]
-		MCSwipeCompletionBlock CompletionBlock3 { get; set; }
+		NSAction CompletionBlock3 { get; set; }
 
 		[Export ("completionBlock4", ArgumentSemantic.Copy)]
-		MCSwipeCompletionBlock CompletionBlock4 { get; set; }
+		NSAction CompletionBlock4 { get; set; }
 
 		[Export ("firstTrigger")]
 		float FirstTrigger { get; set; }
@@ -65,16 +65,16 @@ namespace MCSwipe {
 		float SecondTrigger { get; set; }
 
 		[Export ("modeForState1")]
-		MCSwipeTableViewCellMode ModeForState1 { get; set; }
+		MCCellMode ModeForState1 { get; set; }
 
 		[Export ("modeForState2")]
-		MCSwipeTableViewCellMode ModeForState2 { get; set; }
+		MCCellMode ModeForState2 { get; set; }
 
 		[Export ("modeForState3")]
-		MCSwipeTableViewCellMode ModeForState3 { get; set; }
+		MCCellMode ModeForState3 { get; set; }
 
 		[Export ("modeForState4")]
-		MCSwipeTableViewCellMode ModeForState4 { get; set; }
+		MCCellMode ModeForState4 { get; set; }
 
 		[Export ("dragging")]
 		bool Dragging { [Bind ("isDragging")] get; }

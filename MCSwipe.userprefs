@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MCSwipe/ApiDefinition.cs">
     <Files>
-      <File FileName="MCSwipe/ApiDefinition.cs" Line="89" Column="80" />
+      <File FileName="MCSwipe/ApiDefinition.cs" Line="99" Column="19" />
       <File FileName="MCSwipe/StructsAndEnums.cs" Line="16" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
