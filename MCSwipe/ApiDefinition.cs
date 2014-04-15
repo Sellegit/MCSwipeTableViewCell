@@ -6,6 +6,8 @@ using MonoTouch.ObjCRuntime;
 namespace MCSwipe {
 	[BaseType (typeof (UITableViewCell))]
 	public partial interface MCSwipeTableViewCell {
+		[Export("initWithStyle:reuseIdentifier:")]
+		IntPtr Constructor (UITableViewCellStyle cellStyle, string reuseIdentifier);
 
 		[Export ("delegate", ArgumentSemantic.Assign)]
 		MCSwipeTableViewCellDelegate Delegate { get; set; }
