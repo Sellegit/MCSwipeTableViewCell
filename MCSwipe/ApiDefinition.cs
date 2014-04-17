@@ -4,6 +4,9 @@ using MonoTouch.Foundation;
 using MonoTouch.ObjCRuntime;
 
 namespace MCSwipe {
+
+	public delegate void MCSwipeCompletionBlock(MCSwipeTableViewCell cell, MCCellState state, MCCellMode mode);
+
 	[BaseType (typeof (UITableViewCell))]
 	public partial interface MCSwipeTableViewCell {
 		[Export("initWithStyle:reuseIdentifier:")]
@@ -49,16 +52,16 @@ namespace MCSwipe {
 		UIView View4 { get; set; }
 
 		[Export ("completionBlock1", ArgumentSemantic.Copy)]
-		NSAction CompletionBlock1 { get; set; }
+		MCSwipeCompletionBlock CompletionBlock1 { get; set; }
 
 		[Export ("completionBlock2", ArgumentSemantic.Copy)]
-		NSAction CompletionBlock2 { get; set; }
+		MCSwipeCompletionBlock CompletionBlock2 { get; set; }
 
 		[Export ("completionBlock3", ArgumentSemantic.Copy)]
-		NSAction CompletionBlock3 { get; set; }
+		MCSwipeCompletionBlock CompletionBlock3 { get; set; }
 
 		[Export ("completionBlock4", ArgumentSemantic.Copy)]
-		NSAction CompletionBlock4 { get; set; }
+		MCSwipeCompletionBlock CompletionBlock4 { get; set; }
 
 		[Export ("firstTrigger")]
 		float FirstTrigger { get; set; }
@@ -88,10 +91,10 @@ namespace MCSwipe {
 		bool ShouldAnimateIcons { get; set; }
 
 		[Export ("setSwipeGestureWithView:color:mode:state:completionBlock:")]
-		void SetSwipeGestureWithView (UIView view, UIColor color, MCCellMode mode, MCCellState state, NSAction completionBlock);
+		void SetSwipeGestureWithView (UIView view, UIColor color, MCCellMode mode, MCCellState state, MCSwipeCompletionBlock completionBlock);
 
 		[Export ("swipeToOriginWithCompletion:")]
-		void SwipeToOriginWithCompletion (NSAction completion);
+		void SwipeToOriginWithCompletion (MCSwipeCompletionBlock completion);
 	}
 
 	[Model, BaseType (typeof (NSObject))]
