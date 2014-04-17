@@ -18,11 +18,5 @@ namespace MCSwipe
 		Exit,
 		Switch
 	}
-
-	public enum MCSwipeCompletionBlock : uint {
-		TableViewCellModeNone = 0,
-		TableViewCellModeExit,
-		TableViewCellModeSwitch
-	}
 }
 
