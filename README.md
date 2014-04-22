@@ -6,9 +6,9 @@ A Xamarin.iOS Binding of MCSwipeTableViewCell (Swappable UITableViewCell subclas
 
 Modes
 ====================
-Switch Mode
-<img src="https://raw.github.com/alikaragoz/MCSwipeTableViewCell/master/github-assets/mcswipe-switch.gif" /><br />
-Exit Mode
+###Switch Mode
+<img src="https://raw.github.com/alikaragoz/MCSwipeTableViewCell/master/github-assets/mcswipe-switch.gif" />
+###Exit Mode
 <img src="https://raw.github.com/alikaragoz/MCSwipeTableViewCell/master/github-assets/mcswipe-exit.gif" />
 
 
