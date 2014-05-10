@@ -14,11 +14,11 @@ Modes
 
 Usage
 ====================
-using MCSwipe;
-//[...]
-
-public override UITableViewCell GetCell (UITableView tableView, NSIndexPath indexPath)
-		{
+	using MCSwipe;
+	//[...]
+			
+	public override UITableViewCell GetCell (UITableView tableView, NSIndexPath indexPath)
+			{
 			const string cellName = "Cell";
 
 			MCSwipeTableViewCell cell = tableView.DequeueReusableCell (cellName) as MCSwipeTableViewCell;
