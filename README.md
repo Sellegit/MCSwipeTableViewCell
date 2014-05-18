@@ -30,20 +30,20 @@ Usage
 				
 			cell.TextLabel.Text = cell.DetailTextLabel.Text = String.Format("Swipe Mode Cell {0}", indexPath.Row);
 
-			cell.SetFirst(UIImage.FromFile("check.png"), UIColor.FromRGB(85, 213, 80), MCCellMode.Switch, delegate {
-				Console.WriteLine("Checkmark");
+			cell.SetSwipeGestureWithView (UIImage.FromFile ("check.png"), MCSwipe.Colors.Green, MCCellMode.Switch, MCCellState.One, delegate {
+				Console.WriteLine("First");
 			});
 			
-			cell.SetSecond(UIImage.FromFile("cross.png"), UIColor.FromRGB(232,61,14), MCCellMode.Switch, delegate {
-				Console.WriteLine("Cross");
+			cell.SetSwipeGestureWithView (UIImage.FromFile ("cross.png"), MCSwipe.Colors.Red, MCCellMode.Switch, MCCellState.Two, delegate {
+				Console.WriteLine("Second");
 			});
 			
-			cell.SetThird(UIImage.FromFile("clock.png"), UIColor.FromRGB(254,217,56), MCCellMode.Switch, delegate {
-				Console.WriteLine("Clock");
+			cell.SetSwipeGestureWithView (UIImage.FromFile ("clock.png"), MCSwipe.Colors.Yellow, MCCellMode.Switch, MCCellState.Three, delegate {
+				Console.WriteLine("Third");
 			});
 			
-			cell.SetFourth(UIImage.FromFile("list.png"), UIColor.FromRGB(206,149,98), MCCellMode.Switch, delegate {
-				Console.WriteLine("List");
+			cell.SetSwipeGestureWithView (UIImage.FromFile ("list.png"), MCSwipe.Colors.Brown, MCCellMode.Switch, MCCellState.Four, delegate {
+				Console.WriteLine("Fourth");
 			});
 				
 			return cell;

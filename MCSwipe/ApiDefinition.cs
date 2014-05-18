@@ -90,6 +90,7 @@ namespace MCSwipe {
 		[Export ("shouldAnimateIcons")]
 		bool ShouldAnimateIcons { get; set; }
 
+		// Doesn't work with all four states
 		/*[Export ("setSwipeGestureWithView:color:mode:state:completionBlock:")]
 		void SetSwipeGestureWithView (UIView view, UIColor color, MCCellMode mode, MCCellState state, MCSwipeCompletionBlock completionBlock);*/
 

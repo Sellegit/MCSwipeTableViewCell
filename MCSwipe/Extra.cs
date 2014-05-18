@@ -33,36 +33,37 @@ namespace MCSwipe
 
 	public static class Extra
 	{
-		public static void SetFirst(this MCSwipeTableViewCell cell, UIImage Image, UIColor Color, MCCellMode Mode, MCSwipeCompletionBlock Completion)
+		public static void SetSwipeGestureWithView(this MCSwipeTableViewCell cell, UIImage Image, UIColor Color, MCCellMode Mode, MCCellState State, MCSwipeCompletionBlock Completion)
 		{
-			cell.Color1 = Color;
-			cell.View1 = ViewWithImage (Image);
-			cell.ModeForState1 = Mode;
-			cell.CompletionBlock1 = Completion;
-		}
+			switch (State) {
+			case MCCellState.One:
+				cell.Color1 = Color;
+				cell.View1 = ViewWithImage (Image);
+				cell.ModeForState1 = Mode;
+				cell.CompletionBlock1 = Completion;
+				break;
 
-		public static void SetSecond(this MCSwipeTableViewCell cell, UIImage Image, UIColor Color, MCCellMode Mode, MCSwipeCompletionBlock Completion)
-		{
-			cell.Color2 = Color;
-			cell.View2 = ViewWithImage (Image);
-			cell.ModeForState2 = Mode;
-			cell.CompletionBlock2 = Completion;
-		}
+			case MCCellState.Two:
+				cell.Color2 = Color;
+				cell.View2 = ViewWithImage (Image);
+				cell.ModeForState2 = Mode;
+				cell.CompletionBlock2 = Completion;
+				break;
 
-		public static void SetThird(this MCSwipeTableViewCell cell, UIImage Image, UIColor Color, MCCellMode Mode, MCSwipeCompletionBlock Completion)
-		{
-			cell.Color3 = Color;
-			cell.View3 = ViewWithImage (Image);
-			cell.ModeForState3 = Mode;
-			cell.CompletionBlock3 = Completion;
-		}
+			case MCCellState.Three:
+				cell.Color3 = Color;
+				cell.View3 = ViewWithImage (Image);
+				cell.ModeForState3 = Mode;
+				cell.CompletionBlock3 = Completion;
+				break;
 
-		public static void SetFourth(this MCSwipeTableViewCell cell, UIImage Image, UIColor Color, MCCellMode Mode, MCSwipeCompletionBlock Completion)
-		{
-			cell.Color4 = Color;
-			cell.View4 = ViewWithImage (Image);
-			cell.ModeForState4 = Mode;
-			cell.CompletionBlock4 = Completion;
+			case MCCellState.Four:
+				cell.Color4 = Color;
+				cell.View4 = ViewWithImage (Image);
+				cell.ModeForState4 = Mode;
+				cell.CompletionBlock4 = Completion;
+				break;
+			}
 		}
 
 		private static UIView ViewWithImage(UIImage img) {
