@@ -30,30 +30,24 @@ Usage
 				
 			cell.TextLabel.Text = cell.DetailTextLabel.Text = String.Format("Swipe Mode Cell {0}", indexPath.Row);
 
-			cell.SetSwipeGestureWithView (this.ViewWithImage ("clock.png"), MCSwipe.Colors.Yellow, MCCellMode.Switch, MCCellState.Three, delegate(MCSwipeTableViewCell cll, MCCellState state, MCCellMode mode) {
-				Console.WriteLine("Third");
+			cell.SetFirst(UIImage.FromFile("check.png"), UIColor.FromRGB(85, 213, 80), MCCellMode.Switch, delegate {
+				Console.WriteLine("Checkmark");
 			});
-
-			cell.SetSwipeGestureWithView (this.ViewWithImage ("list.png"), MCSwipe.Colors.Brown, MCCellMode.Switch, MCCellState.Four, delegate(MCSwipeTableViewCell cll, MCCellState state, MCCellMode mode) {
-				Console.WriteLine("Fourth");
+			
+			cell.SetSecond(UIImage.FromFile("cross.png"), UIColor.FromRGB(232,61,14), MCCellMode.Switch, delegate {
+				Console.WriteLine("Cross");
 			});
-				
-			cell.SetSwipeGestureWithView (this.ViewWithImage ("check.png"), MCSwipe.Colors.Green, MCCellMode.Switch, MCCellState.One, delegate(MCSwipeTableViewCell cll, MCCellState state, MCCellMode mode) {
-				Console.WriteLine("First");
+			
+			cell.SetThird(UIImage.FromFile("clock.png"), UIColor.FromRGB(254,217,56), MCCellMode.Switch, delegate {
+				Console.WriteLine("Clock");
 			});
-
-			cell.SetSwipeGestureWithView (this.ViewWithImage ("cross.png"), MCSwipe.Colors.Red, MCCellMode.Switch, MCCellState.Two, delegate(MCSwipeTableViewCell cll, MCCellState state, MCCellMode mode) {
-				Console.WriteLine("Second");
+			
+			cell.SetFourth(UIImage.FromFile("list.png"), UIColor.FromRGB(206,149,98), MCCellMode.Switch, delegate {
+				Console.WriteLine("List");
 			});
 				
 			return cell;
 		}
-
-
-
-Bugs/Limitations
-====================
--When setting 4 States, only 3 seem functional<br />
 
 
 Credits

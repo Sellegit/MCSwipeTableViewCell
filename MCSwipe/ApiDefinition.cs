@@ -90,8 +90,8 @@ namespace MCSwipe {
 		[Export ("shouldAnimateIcons")]
 		bool ShouldAnimateIcons { get; set; }
 
-		[Export ("setSwipeGestureWithView:color:mode:state:completionBlock:")]
-		void SetSwipeGestureWithView (UIView view, UIColor color, MCCellMode mode, MCCellState state, MCSwipeCompletionBlock completionBlock);
+		/*[Export ("setSwipeGestureWithView:color:mode:state:completionBlock:")]
+		void SetSwipeGestureWithView (UIView view, UIColor color, MCCellMode mode, MCCellState state, MCSwipeCompletionBlock completionBlock);*/
 
 		[Export ("swipeToOriginWithCompletion:")]
 		void SwipeToOriginWithCompletion (MCSwipeCompletionBlock completion);
