@@ -1,0 +1,4 @@
+obj/Debug/ios/ObjCRuntime/Messaging.g.cs
+obj/Debug/ios/MCSwipe/MCSwipeTableViewCell.g.cs
+obj/Debug/ios/MCSwipe/MCSwipeTableViewCellDelegate.g.cs
+obj/Debug/ios/ObjCRuntime/Trampolines.g.cs

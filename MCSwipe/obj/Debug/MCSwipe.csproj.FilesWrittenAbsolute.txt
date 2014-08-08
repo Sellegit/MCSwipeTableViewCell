@@ -1,0 +1,5 @@
+/Users/S_sn/Sellegit/Sellegit_Mobile/Lib/MCSwipeTableViewCell/MCSwipe/obj/Debug/MonoTouch,Version=v1.0.AssemblyAttribute.cs
+/Users/S_sn/Sellegit/Sellegit_Mobile/Lib/MCSwipeTableViewCell/MCSwipe/bin/Debug/MCSwipe.dll.mdb
+/Users/S_sn/Sellegit/Sellegit_Mobile/Lib/MCSwipeTableViewCell/MCSwipe/bin/Debug/MCSwipe.dll
+/Users/S_sn/Sellegit/Sellegit_Mobile/Lib/MCSwipeTableViewCell/MCSwipe/obj/Debug/MCSwipe.dll
+/Users/S_sn/Sellegit/Sellegit_Mobile/Lib/MCSwipeTableViewCell/MCSwipe/obj/Debug/MCSwipe.dll.mdb
